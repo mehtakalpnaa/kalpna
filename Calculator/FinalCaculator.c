@@ -1,4 +1,6 @@
 #include<stdio.h>
+int add(int a,int b);
+int subtract(int a,int b);
 int multiply(int a, int b);
 int devide(int a, int b);
 
@@ -27,11 +29,11 @@ void main()
             switch(ch)
         {
             case '+':
-                
+                result=add(num1,num2);
                 printf("%d",result);
                 break;
             case '-':
-                
+                result=subtract(num1,num2);
                 printf("%d",result);
                 break;
             case '*':
@@ -53,6 +55,14 @@ void main()
   
     
         
+}
+int add(int a,int b)
+{
+    return a + b;
+}
+int subtract(int a,int b)
+{
+    return a - b;
 }
 int multiply(int a, int b)
 {
